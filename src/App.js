@@ -6,25 +6,28 @@ import Catigories from "./components/Catigories";
 import Sort from "./components/Sort";
 import PizzaBlock from "./components/PizzaBlock";
 
+import pizzas from "./assets/pizzas.json"
+
+console.log(pizzas)
 
 
 function App() {
     return (
         <div className="wrapper">
-            <Header />
+            <Header/>
 
             <div className="content">
                 <div className="container">
                     <div className="content__top">
-                        <Catigories />
-                        <Sort />
+                        <Catigories/>
+                        <Sort/>
                     </div>
                     <h2 className="content__title">Все пиццы</h2>
                     <div className="content__items">
-                        <PizzaBlock title="Мексиканская" price="500 руб." />
-                        <PizzaBlock title="Китайская" price="50 руб." />
-                        <PizzaBlock title="Омериканская" price=" 300руб." />
-                        <PizzaBlock title="Мексиканская" price="500 руб." />
+                        {
+                            pizzas.map((obj) =>(
+                                <PizzaBlock {...obj} />
+                            ))}
                     </div>
                 </div>
             </div>
