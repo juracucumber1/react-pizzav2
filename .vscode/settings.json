@@ -6,4 +6,6 @@
     "prettier.semi": true,
     "prettier.jsxBracketSameLine": true,
     "prettier.printWidth": 100,
+
+    "editor.formatOnSave": true,
 }

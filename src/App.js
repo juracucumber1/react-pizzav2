@@ -8,7 +8,6 @@ import PizzaBlock from "./components/PizzaBlock";
 
 import pizzas from "./assets/pizzas.json"
 
-console.log(pizzas)
 
 
 function App() {
@@ -26,7 +25,7 @@ function App() {
                     <div className="content__items">
                         {
                             pizzas.map((obj) =>(
-                                <PizzaBlock {...obj} />
+                                <PizzaBlock key={obj.id} {...obj} />
                             ))}
                     </div>
                 </div>
