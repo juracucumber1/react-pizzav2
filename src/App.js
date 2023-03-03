@@ -1,11 +1,9 @@
 import React from "react";
 import "./scss/app.scss"
 
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import Index from "./components/NotFoundBlock";
-import NotFoundBlock from "./components/NotFoundBlock";
 import NotFound from "./pages/NotFound";
 import Cart from "./pages/Cart";
 

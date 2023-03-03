@@ -15,7 +15,7 @@ function PizzaBlock({title, price, imageUrl, sizes, types}) {
     // }
 
     return(
-        <div className="pizza-block">
+        <div className="pizza-block-wrapper">
             <img
                 className="pizza-block__image"
                 src={imageUrl}
